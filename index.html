@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Church Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header, footer {
+            background: #003366; /* Deep blue background */
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        nav {
+            background: #004080;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            position: relative;
+            min-height: 400px;
+            padding: 2rem;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            overflow: hidden;
+            margin: 20px; /* Margin around each section */
+            border-radius: 10px; /* Slightly rounded corners for aesthetic */
+        }
+        #top-banner {
+            background: white;
+            background-image: url('C:/Users/Admin/Desktop/G.O.C/G7.jpg');
+            background-position: center; /* Image remains in the top-left corner */
+            background-repeat: no-repeat;
+            background-size: cover; /* Image size relative to the section */
+            min-height: 200px; /* Half the height of other sections (400px) */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .scrolling-text {
+            font-size: 24px; /* Larger font size */
+            font-weight: bold; /* Bold for visibility */
+            line-height: 1.8;
+            position: absolute;
+            bottom: 0;
+            animation: scroll-up 10s linear infinite; /* Cascading effect */
+            width: 80%;
+            text-align: center;
+            padding-left: 20%; /* Shift text slightly to the right */
+            color: #333; /* Dark color for better contrast */
+        }
+
+        @keyframes scroll-up {
+            0% {
+                transform: translateY(100%); /* Start at bottom */
+            }
+            100% {
+                transform: translateY(-100%); /* Move to top */
+            }
+        }
+
+        #about {
+            background: url('C:/Users/Admin/Desktop/G.O.C/G1.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        #services {
+            background: url('C:/Users/Admin/Desktop/G.O.C/G2.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        #events {
+            background: url('C:/Users/Admin/Desktop/G.O.C/G4.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        #contact {
+            background: url('C:/Users/Admin/Desktop/G.O.C/G3.jpg') no-repeat center center;
+            background-size: cover;
+        }
+        h1, p {
+            position: relative;
+            z-index: 2;
+        }
+        section::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay for readability */
+            z-index: 1;
+
+        }
+            #top-banner::before {
+            content: none; /* Disable the overlay */
+        }
+        /* Dividers between sections */
+        .divider {
+            height: 10px;
+            background: white; /* White divider */
+            margin: 0; /* Ensure the divider doesn’t add extra space */
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>GOSPEL OUTREACH CHURCH - MADOGO</h1>
+        <p>Welcome to our community</p>
+    </header>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#events">Events</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Top Banner Section -->
+    <section id="top-banner">
+        <div class="scrolling-text">
+            <p>GOSPEL OUTREACH CHURCH - MADOGO A Family Church</p>
+            <p>You crown the year with Your goodness, And Your paths drip with abundance.</p>
+            <p>You crown the year with a bountiful harvest; even the hard pathways overflow with abundance.</p>
+        </div>
+    </section>
+
+    <section id="about">
+        <h1>About Us</h1>
+        <p>We are a community of believers dedicated to worship and growth.</p>
+    </section>
+    <div class="divider"></div>
+
+    <section id="services">
+        <h1>Our Services</h1>
+        <p>Join us for worship and spiritual teachings.  </p>
+        <p> Main service: from 9:30AM - 11:30AM</p>
+    </section>
+    <div class="divider"></div>
+
+    <section id="events">
+        <h1>Upcoming Events</h1>
+        <p>Stay tuned for our latest events and activities.</p>
+    </section>
+    <div class="divider"></div>
+
+    <section id="contact">
+        <h1>Contact Us</h1>
+        <p>For inquiries, please reach out to us at:  </p>
+        <p>Email: GOC-MADOGO@GMAIL.com  </p>
+        <p>phone number: 0725 236 224.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 [GOSPEL OUTREACH CHURCH - MADOGO]. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
